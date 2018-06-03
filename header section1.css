@@ -1,0 +1,98 @@
+/*--------header--------*/
+
+	header {
+		position: relative;
+		height: 100%;
+		min-height: 600px;
+		background: #000 url(https://desk-fd.zol-img.com.cn/t_s1920x1080c5/g5/M00/01/0E/ChMkJ1bKwZKIerBrAAZhugz9ZjgAALGaQF1ULMABmHS469.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	/*--------logo--------*/
+
+	header .logo {
+		margin-top: 10px;
+		margin-left: 10px;
+		float: left;
+		color: #FF6600;
+		font-size: 32px;
+	}
+
+	/*--------nav--------*/
+
+	header .nav {
+		float: right;
+		min-width: 500px;
+	}
+
+	header .nav>li {
+		display: inline-block;
+		float: left;
+	}
+
+	header .nav a{
+		display: inline-block;
+		margin-top: 10px;
+		margin-right: 10px;
+		padding: 10px;
+		border-radius: 4px;
+
+		color: #fff;
+		font-size: 16px;
+	}
+
+	header .nav a:hover {
+		color: #FF6600;
+		background: #FFFFCC;
+	}	
+
+	/*--------intro--------*/
+
+	header .intro {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		color: #FFF;
+		text-align: center;
+	}
+
+	header .intro h1 {
+		font-size: 36px;
+	}
+
+	header .intro h2 {
+		font-size: 64px;
+		margin-bottom: 20px;
+	}
+
+	/*--------main--------*/
+
+	/*--------section--------*/
+
+	section {
+		margin-top: 40px;
+		text-align: center;
+	}
+
+	section > h2 {
+		font-size: 32px;
+	}
+
+	section > p {
+		margin-top: 10px;
+	}
+
+	section > .services > li {
+		float: left;
+		width: 33.33%;
+		margin-top: 30px;
+		padding: 10px 20px;
+	}
+
+	section > ul .iconfont {
+		font-size: 48px;
+		color: #0099CC;
+	}
+
+

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>StarCraft II</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="common.css">
+	<link rel="stylesheet" href="header section1.css">
+	<link rel="stylesheet" href="section2.css">
+	<link rel="stylesheet" href="https://at.alicdn.com/t/font_676918_ry7s1u1ffjz9qkt9.css">
+
+	<style>
+
+/*----------timeline----------*/
+
+		section .timeline > li {
+			margin-top: 80px;
+			position: relative;
+		}
+
+		section .timeline .img {
+			margin-top: 80px;
+			background: #FF6600;
+			color: #fff;
+		}
+
+		section .timeline > li img,
+		section .timeline .img {
+			display: table-cell;
+			vertical-align: middle;
+			text-align: center;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			border: 5px solid lightblue;
+		}
+
+		section .timeline > li:nth-child(odd) {
+			padding-right: calc(50% - 105px);
+			text-align: right;
+		}
+
+		section .timeline > li:nth-child(odd) dl {
+			margin-right: 220px;
+		}
+
+		section .timeline > li:nth-child(odd) img {
+			float: right;
+		}
+
+		section .timeline > li:nth-child(even) {
+			padding-left: calc(50% - 105px);
+			text-align: left;
+		}
+
+		section .timeline > li:nth-child(even) dl {
+			margin-left: 220px;
+		}
+
+		section .timeline > li:nth-child(even) img {
+			float: left;
+		}
+
+		section .timeline dt {
+			font-size: 16px;
+			font-weight: bold;
+		}
+
+		section .timeline dd:nth-child(2) {
+			font-weight: bold;
+		}
+	
+		section .timeline > li::before {
+			content: '';
+			position: absolute;
+			left: calc(50% - 2px);
+			top: 208px;
+			display: inline-block;
+			height: 88px;
+			width: 4px;
+			background: lightblue;
+		}
+
+		section .timeline > li:last-child::before {
+			height: 0;
+		}
+
+
+/*----------team----------*/
+
+		section .team {
+			display: flex;
+			margin: 40px;
+			flex-wrap: wrap;
+			justify-content: space-around;
+		}
+
+		section .team > li h3{
+			margin-top: 20px;
+			font-size: 21px;
+		}
+
+
+		section .team > li img {
+			border: 5px solid lightblue;
+			border-radius: 50%;
+			width: 250px;
+			height: 250px;
+		}
+
+		#fifth .team > li .iconfont {
+			font-size: 38px;
+			margin: 0 10px;
+		}
+
+		#fifth .team > li .iconfont:hover {
+			color: #FF6600;
+		}
+
+/*----------advertisement----------*/
+
+		.advertisement {
+			margin-top: 40px;
+			text-align: center;
+		}
+
+		.advertisement a {
+			display: inline-block;
+			margin: 0 40px;
+			margin-bottom: 40px;
+		}
+
+		.advertisement img {
+			width: 200px;
+		}
+
+/*----------contact----------*/
+
+		#sixth {
+			background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527880039423&di=7a540a9ac106518f1e176fdf11907f96&imgtype=0&src=http%3A%2F%2Fpic1.win4000.com%2Fwallpaper%2F7%2F513807cc8464c.jpg) center center no-repeat;
+			background-size: cover;
+			height: 100%;
+			min-height: 600px;
+			padding: 40px;
+		}
+
+		#sixth h2,
+		#sixth p {
+			color: #fff;
+		}
+		
+		section .information {
+			float: left;
+			margin-top: 40px;
+			width: 50%;
+		}
+
+		section .textarea {
+			float: right;
+			margin-top: 40px;			
+			width: 50%;
+		}
+
+		.inputbox {
+			border-radius: 5px;
+		}
+
+		section .inputbox1 {
+			float: right;
+			padding: 20px;
+			margin-top: 20px;
+			margin-right: 10px;
+		}
+
+		section .inputbox2 {
+			float: left;
+			padding: 20px 20px 14px;
+			margin-top: 21px;
+			margin-left: 10px;
+		}
+
+		textarea::placeholder {
+			font-family: Arial;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		input::placeholder {
+			font-family: Arial;
+			font-size: 14px;
+			font-weight: bold;
+		}
+
+		#sixth .button {
+			margin-top: 40px;
+		}
+
+/*----------footer----------*/
+
+		footer {
+			margin: 0 auto;
+			width: 1000px;
+		}
+
+		footer .social {
+			text-align: center;	
+		}
+
+		footer .iconfont {
+			padding:0 10px;		
+			font-size: 38px;
+			color: #0099CC;
+		}
+
+		footer .iconfont:hover {
+			color: #FF6600;
+		}
+
+		footer p {
+			float: left;
+			padding: 20px;
+		}
+
+		footer .P-T {
+			float: right;
+			padding: 20px;
+		}
+
+		footer .P-T>a {
+			color: #FF6600;
+			margin-left: 20px;
+		}
+
+		footer .P-T>a:hover {
+			text-decoration: underline;
+		}
+	</style>
+
+</head>
+<body>
+
+	<header id="first">
+
+		<div class="navbar clearfix layout">
+			<a class="logo">Start Project</a>
+			<ul class="nav ">
+				<li><a href="#">SERVICES</a></li>
+				<li><a href="#">PORTFOLIO</a></li>
+				<li><a href="#">ABOUT</a></li>
+				<li><a href="#">TEAM</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>
+		</div>
+
+			
+		<div class="intro layout">
+			<h1>Welcome To Our Studio!</h1>
+			<h2>IT'S NICE TO MEET YOU</h2>
+			<a href="" class="button">TELL ME MORE</a>
+		</div>  <!-- id最好用名称 -->
+	</header>
+
+	<main class="layout">
+
+		<section id="second">
+			<h2>SERVICES</h2>
+			<p>Lorem ipsum dolor sit amet consectetur.</p>
+			<ul class="services clearfix">
+				<li>
+					<sapn class="iconfont icon-EC"></sapn>
+					<h3>E-Commerce</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+				</li>
+				<li>
+					<sapn class="iconfont icon-RD"></sapn>
+					<h3>Responsive Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+				</li>
+				<li>
+					<sapn class="iconfont icon-WS"></sapn>
+					<h3>Web Security</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+				</li>
+			</ul>
+		</section>
+
+		<section id="third">
+			<h2>RACE</h2>
+			<p>游戏描述了26世纪初期，位于银河系中心的三个种族在克普鲁星际空间中争夺霸权的故事。三个种族分别是：地球人的后裔人族（Terran）、一种进化迅速的生物群体异虫（Zerg），以及一支高度文明并具有心灵力量的远古种族星灵（Protoss）。</p>
+			<div class="race clearfix">
+					<figure>
+						<a href=""><img src="http://img1.cache.netease.com/game/sc2/media/artwork/artwork_icon_terran-large.jpg" alt=""></a>
+						<figcaption>Terran</figcaption>
+						<p>地球人的后裔人族</p>
+					</figure>
+					<figure>
+						<a href=""><img src="http://img1.cache.netease.com/game/sc2/media/artwork/artwork_icon_zerg01-large.jpg" alt=""></a>
+						<figcaption>Zerg</figcaption>
+						<p>一种进化迅速的生物群体异虫</p>
+					</figure>
+					<figure>
+						<a href=""><img src="http://img1.cache.netease.com/game/sc2/media/artwork/artwork_icon_protoss-large.jpg" alt=""></a>
+						<figcaption>Protoss</figcaption>
+						<p>一支高度文明并具有心灵力量的远古种族星灵</p>
+					</figure>
+					<figure>
+						<a href=""><img src="http://img1.cache.netease.com/game/sc2/media/artwork/portrait_raynorcommander-large.jpg" alt=""></a>
+						<figcaption>Jim Raynor</figcaption>
+						<p></p>
+					</figure>
+					<figure>
+						<a href=""><img src="http://img1.cache.netease.com/game/sc2/media/artwork/portrait_kerrigan-large.jpg" alt=""></a>
+						<figcaption>Sarah Louise Kerrigan</figcaption>
+						<p></p>
+					</figure>
+					<figure>
+						<a  href="" class="touch"></a>
+						<a href=""><img src="http://img1.cache.netease.com/game/sc2/media/artwork/portrait_hightemplar-large.jpg" alt=""></a>
+						<figcaption>Artanis</figcaption>
+						<p></p>
+					</figure>
+			</div>
+		</section>
+
+		<section id="forth">
+			<h2>Timeline</h2>
+			<p>versions</p>
+			<ul class="timeline clearfix">
+				<li class="clearfix">
+					<img src="http://img1.cache.netease.com/game/sc2/media/wallpapers/wall000/wall000-800x600.jpg" alt="">
+					<dl>
+						<dt>2010年7月27日全球同步上市（中国大陆为2011年3月29日）</dt>
+						<dd>《星际争霸II：自由之翼》</dd>
+						<dd>《星际争霸II》的故事发生在《星际争霸：母巢之战》后的第四年。吉姆·雷诺所领导的革命军一直在为推翻蒙斯克的帝国而进行一次次战斗；然而一个昔日的伙伴——泰凯斯·芬利突然来访并且打乱了他的生活。</dd>
+					</dl>
+				</li>
+				<li class="clearfix">
+					<img src="http://img1.cache.netease.com/game/sc2/media/wallpapers/wall008/wall008-1024x768.jpg" alt="">
+					<dl>
+						<dt>虫群之心于2013年3月12日在美洲、欧洲、东南亚、台湾等地同步发售。（中国大陆为2013年7月17日）</dt>
+						<dd>《星际争霸II：虫群之心》</dd>
+						<dd>《虫群之心》的游戏情节围绕虫族的首领刀锋女王凯瑞甘展开，在《自由之翼》的结尾，雷诺使用一个古老的萨尔那加神器终于击溃了异虫的进攻，将凯瑞甘恢复成人类；失去了领袖人物的异虫破裂为数个虫群分布在克普鲁星区上，一个异虫的寄生女王扎加拉更是想取代凯瑞甘成为新的首领。</dd>
+					</dl>
+				</li>
+				<li class="clearfix">
+					<img src="http://img1.cache.netease.com/game/sc2/media/wallpapers/wall005/wall005-1024x768.jpg" alt="">
+					<dl>
+						<dt>2015年11月10日，虚空之遗已在全球发布。</dt>
+						<dd>《星际争霸II：虚空之遗》</dd>
+						<dd>当年主宰率领着异虫大军入侵了星灵母星-艾尔，迫使星灵放弃艾尔从此颠沛流离，然而星灵年轻大主教-阿塔尼斯费尽了千辛万苦终于集结了星灵黄金舰队准备反攻艾尔，不料就在进攻前夕，黑暗教长泽拉图前来警告阿塔尼斯，表示真正敌人堕落萨尔那加-埃蒙即将回归，若不正视这威胁的存在，宇宙将面临毁灭的命运，但阿塔尼斯还是决定以收复艾尔作为优先目标。</dd>
+					</dl>
+				</li>
+				<li class="clearfix">
+					<span class="img">
+						BE PART OF OUR STORY!
+					</span>
+				</li> 						
+			</ul>
+		</section>
+
+		<section id="fifth">
+			<h2>OUR AMAZING TEAM</h2>
+			<p>Lorem ipsum dolor sit amet consectetur.</p>
+			<ul class="team">
+				<li>
+				  <img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1792279990,2263502436&fm=27&gp=0.jpg" alt="">
+					<h3>tossboy-F91</h3>
+					<p>Lead Designer</p>
+					<a href="" class="iconfont icon-bianselong"></a>
+					<a href="" class="iconfont icon-baitu"></a>
+					<a href="" class="iconfont icon-daxiang"></a>
+				</li>
+				<li>
+				  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527878398394&di=1281a149ca44c80e674489fc81c2d736&imgtype=0&src=http%3A%2F%2Fcdn.dota2.com.cn%2Fsteamcommunity%2Fpublic%2Fimages%2Favatars%2Fhttps%3A%2F%2Fsteamcdn-a.akamaihd.net%2Fsteamcommunity%2Fpublic%2Fimages%2Favatars%2F5f%2F5f400f4f0e1edf39acd7a3f4534bdf3ce33831eb_full.jpg" alt="">
+					<h3>小色</h3>
+					<p>Lead Designer</p>
+					<a href="" class="iconfont icon-bianselong"></a>
+					<a href="" class="iconfont icon-baitu"></a>
+					<a href="" class="iconfont icon-daxiang"></a>
+				</li>
+				<li>
+				  <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527878457968&di=0a9c1ca851a33361255b83882f1c70c5&imgtype=0&src=http%3A%2F%2Fimgpoobbs.b0.upaiyun.com%2Fuploadfile%2Fphoto%2F2016%2F7%2Fpx_146997000779530.jpg%2521photo.box2s.jpg" alt="">
+					<h3>D.va</h3>
+					<p>Lead Designer</p>
+					<a href="" class="iconfont icon-bianselong"></a>
+					<a href="" class="iconfont icon-baitu"></a>
+					<a href="" class="iconfont icon-daxiang"></a>
+				</li>
+			</ul>
+			<p>图片来源网络</p>
+		</section>
+
+		<div class="advertisement">
+			<a href=""><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/envato.jpg" alt=""></a>
+			<a href=""><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/designmodo.jpg" alt=""></a>
+			<a href=""><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/themeforest.jpg" alt=""></a>
+			<a href=""><img src="http://book.jirengu.com/jirengu-inc/jrg-tehui/homework/%E8%8B%A5%E6%84%9A/16/img/logos/creative-market.jpg" alt=""></a>
+		</div>
+
+	  <section id="sixth">
+			<h2>CONTACT US</h2>
+			<p>Lorem ipsum dolor sit amet consectetur.</p>
+			<div class="textarea">
+				<textarea name="message" id="message" class="inputbox inputbox2 clearfix"  placeholder="YOUR MESSAGE*" rows="12" cols="65"></textarea>
+			</div>
+			<div class="information">
+				<input id="username" class="inputbox inputbox1 clearfix" type="text" name="username" placeholder="YOUR NAME*" size="70">
+				<input id="email" class="inputbox inputbox1 clearfix" type="text" name="email" placeholder="YOUR EMAIL*" size="70">
+				<input id="phone" class="inputbox inputbox1 clearfix" type="text" name="phone" placeholder="YOUR PHONE*" size="70">
+			</div>
+			
+			<a href="" class="button">SEND MESSAGE</a>
+		</section>
+	</main>
+
+	<footer>
+		<p class="clearfix">Copyright © Your Website 2018</p>
+		<div class="P-T clearfix">
+			<a href="">Privacy Policy</a>
+			<a href="">Terms of Use</a>
+		</div>
+		<div class="social">
+			<a href="" class="iconfont icon-bianselong"></a>
+			<a href="" class="iconfont icon-baitu"></a>
+			<a href="" class="iconfont icon-daxiang"></a>
+		</div>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+	/*--------figure--------*/
+
+	section .race {
+		max-width: 860px;
+		margin: 0 auto;
+	}
+
+	section .race figure {
+		float: left;
+		width: calc(33.33% - 40px);
+		height: 280px;
+		margin: 20px;
+	}
+
+	section .race a {
+		display: block;
+		height: 220px;
+	}
+
+	section .race img {
+		width: 100%;
+		height: 100%;
+	}
+
+	section .race figcaption {
+		font-size: 18px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+
+	section .race p {
+		color: #666;
+		margin-top: 10px;
+	}
+
+	/*还不能解决光标在图片上出现可点击样式改变(已用a链接解决)*/
+
+	.touch {
+		position: absolute;
+		z-index: 1;
+		width: 247px;
+		height: 220px;
+		background: #0099CC;
+		opacity: 0;
+	}
+
+	.touch:hover {
+		opacity: 0.8;
+	}
